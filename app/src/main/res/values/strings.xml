@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Moviplex Sukabumi</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Riwayat</string>
+    <string name="title_notifications">Profile</string>
+    <string name="title_upcoming">Upcoming</string>
+</resources>

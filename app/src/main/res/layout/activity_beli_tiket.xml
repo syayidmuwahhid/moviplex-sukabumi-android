@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeliTiketActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tiket_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tiket_jam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/kursi_teater" />
+
+    <TextView
+        android:id="@+id/tiket_harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tiket_hargaAF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:text="Jumlah Tiket :" />
+
+        <EditText
+            android:id="@+id/jml_tiket"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:hint="0"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/pilihKursi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PILIH KURSI" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kursiKontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:id="@+id/totalBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:text="Total Bayar : IDR 5000" />
+
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Beli Tiket" />
+
+</LinearLayout>
+</ScrollView>
